@@ -4,7 +4,7 @@
     // Domain lock
     (function(){
       var d = window.location.hostname;
-      var allowed = ['localhost','vercel.app','novometodo.store'];
+      var allowed = ['checkout-ativacao.vercel.app','novometodo.store'];
       var ok = false;
       for(var i=0;i<allowed.length;i++){if(d===allowed[i]||d.endsWith('.'+allowed[i])){ok=true;break;}}
       if(!ok){document.documentElement.innerHTML='';window.location.href='about:blank';}
